@@ -1,0 +1,26 @@
+#!/usr/bin/env ngspicejs
+// Collect all rms values and make scatter chart
+// linter: ngspicejs-lint
+"use strict";
+
+var x = [], y = [], z = [];
+dir('wav').filter((fn) => file_ext(fn) === '.rms').forEach((fn) => {
+    var rms = parseFloat(file_read(fn));
+    var a = file_name(fn).split('.')[0].split('-');
+    var duty = parseFloat(a[0]);
+    var freq = parseFloat(a[1]);
+    //echo(duty, freq, rms);
+    x.push(freq);
+    y.push(duty);
+    z.push(rms);
+});
+
+chart_scatter(x,y,z)
+    .label_x('Frequency')
+    .label_y('Duty cycle')
+    .width(502)
+    .height(240)
+    .title('RMS Loudnes')
+    .size(9)
+    .show()
+    .gif('chart.gif');
