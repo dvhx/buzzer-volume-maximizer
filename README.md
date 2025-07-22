@@ -17,9 +17,9 @@ Finally last script "3-make-chart.ngjs" will create scatter chart from RMS data.
 
 # Results
 
-I've tested 3 buzzers.
+I've tested 3 buzzers. And sorry in charts the duty is not in percents but in x/255, so duty 25 = 10%.
 
-Standard passive 12mm 16ohm 5V buzzer:
+Standard passive 12mm 16ohm 5V buzzer (black plastic cylinder):
 
 ![Passive buzzer 16ohm 12mm](results/buzzer_16ohm_12mm.gif)
 
