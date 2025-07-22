@@ -17,9 +17,14 @@ Finally last script "3-make-chart.ngjs" will create scatter chart from RMS data.
 
 # Results
 
-I tested 3 buzzers. One standard passive 12mm 5V buzzer and 2 small speakers.
+I've tested 3 buzzers.
 
+Standard passive 12mm 16ohm 5V buzzer:
 ![Passive buzzer 16ohm 12mm](results/buzzer_16ohm_12mm.gif)
-![Speaker 30ohm 30mm](results/speaker_30ohm_30mm.gif)
+
+Tiny 16mm 8ohm speaker:
 ![Speaker 8ohm 16mm](results/speaker_8ohm_16mm.gif)
+
+30mm 30ohm speaker from headphones:
+![Speaker 30ohm 30mm](results/speaker_30ohm_30mm.gif)
 
